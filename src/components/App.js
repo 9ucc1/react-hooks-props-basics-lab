@@ -11,8 +11,8 @@ function App() {
   return (
     <div>
       <NavBar />
-      <Home />
-      <About />
+      <Home user={props.name}/>
+      <About bio={props.bio} github={links.github} linkedin={links.linkedin}/>
     </div>
   );
 }
